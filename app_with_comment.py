@@ -33,7 +33,7 @@ while True:  # Loop until a valid loan tenure is entered
         
         while True:  # Get moratorium period
             Moratorium_Period = int(input("Please enter your moratorium period (in Years): "))
-            if Moratorium_Period > 0:
+            if Moratorium_Period >= 0:
                 break
             else:
                 print("Moratorium period must be a positive value.")
